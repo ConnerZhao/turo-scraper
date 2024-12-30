@@ -9,7 +9,8 @@ except ImportError:
     messagebox.showerror("Error", "Please install tkinterdnd2:\n  pip install tkinterdnd2")
     raise
 
-from data_generator import parse_har_for_turo_entries, write_filtered_csv
+from generator import parse_har_for_turo_entries, write_filtered_csv
+
 
 class MinimalTuroApp(TkinterDnD.Tk):
     def __init__(self):
